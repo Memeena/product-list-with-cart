@@ -12,11 +12,7 @@ This is a solution to the [Product list with cart challenge on Frontend Mentor](
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -33,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Desktop_Screenshot.jpg)
-![](./Mobile_Screenshot.jpg)
+![](./Desktop_Screenshot.png)
+![](./Mobile_Screenshot.png)
 
 ### Links
 

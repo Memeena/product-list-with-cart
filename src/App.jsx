@@ -1,4 +1,6 @@
+import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Cart from "./Cart/Cart";
 import Menu from "./Menu/Menu";
 import { loader as menuLoader } from "./Menu/Menu";

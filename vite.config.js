@@ -4,6 +4,6 @@ import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/product-list-with-cart/",
+  // base: "/product-list-with-cart/",
   plugins: [react(), eslint()],
 });

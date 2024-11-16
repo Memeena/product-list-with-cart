@@ -1,12 +1,12 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Cart from "./Cart/Cart";
 import Menu from "./Menu/Menu";
 import { loader as menuLoader } from "./Menu/Menu";
 import Order from "./Order/Order";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Menu />,

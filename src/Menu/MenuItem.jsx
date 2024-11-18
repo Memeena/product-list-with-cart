@@ -29,11 +29,16 @@ export default function MenuItem({ item, width }) {
   return (
     <li className="flex flex-col relative gap-1">
       <img src={img} alt="img" className="rounded-md" />
-      {!isInCart ? (
-        <AddtoCart handleAddCart={handleAddCart} />
-      ) : (
-        <UpdateItemQuantity dessertId={id} currentQuantity={currentQuantity} />
-      )}
+      <>
+        {!isInCart ? (
+          <AddtoCart handleAddCart={handleAddCart} />
+        ) : (
+          <UpdateItemQuantity
+            dessertId={id}
+            currentQuantity={currentQuantity}
+          />
+        )}
+      </>
 
       <p className="mt-8 text-stone-500 text-sm">{category}</p>
       <p className="text-stone-900 font-semibold text-[16px]">{name}</p>

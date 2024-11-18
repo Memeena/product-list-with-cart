@@ -29,13 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Desktop_Screenshot.png)
+![](./Desktop_Screenshot_EmptyCart.png)
+![](./Desktop_Screenshot_Order.png)
 ![](./Mobile_Screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/Memeena/product-list-with-cart)
+- Live Site URL: [Live site URL here](https://memeena.github.io/product-list-with-cart/)
 
 ## My process
 
@@ -93,6 +94,13 @@ To delete the item from the cart when the quantity is decreased to 0, I used the
 ```js
 if (item.quantity === 0) cartSlice.caseReducers.deleteItem(state, action);
 ```
+
+Another important thing I learnt from this challenge is how to deploy a React Router project in Github Pages. 1. We need to do the same thing as any vite project. Additional steps are,
+
+- Change the "BrowserRouter" to "HashRouter"
+- Add a .github/workflow/deploy.yaml file with the content that is already in the [vite deploy site]("https://vite.dev/guide/static-deploy")
+- Change the workflow settings in the repository
+- In the public folder, instead of "assets" folder keep the images and font in the public folder directly.
 
 ### Continued development
 

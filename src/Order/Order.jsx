@@ -10,8 +10,8 @@ export default function Order({ setShowModal }) {
   const totalCartPrice = useSelector(getTotalCartPrice);
   return (
     <div className="flex bg-transparent/50 items-end overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-      <div className="relative mx-auto w-full">
-        <div className="border-0 rounded-t-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+      <div className="relative my-auto mx-auto">
+        <div className="border-0 rounded-t-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none">
           <div className="relative px-6 py-8 mb-8 grid grid-flow-row auto-rows-max items-start justify-items-start gap-4">
             <img src="./images/icon-order-confirmed.svg" alt="confirm-order" />
             <p className="text-4xl font-bold">Order Confirmed</p>

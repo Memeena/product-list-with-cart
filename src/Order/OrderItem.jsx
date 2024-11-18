@@ -3,7 +3,7 @@ import { formatCurrency } from "../utilities/helpers";
 export default function OrderItem({ item }) {
   console.log(item);
   return (
-    <li className=" grid grid-cols-[max-content,1fr,max-content] justify-between gap-4 items-center text-sm py-4">
+    <li className=" grid grid-cols-[max-content,1fr,max-content] justify-between gap-4 items-center text-sm py-4 ">
       <img
         src={`${item.image}`}
         alt="thumbnail"

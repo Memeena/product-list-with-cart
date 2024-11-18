@@ -16,10 +16,7 @@ export default function Button({ type, to, children, onClick, className }) {
   if (type === "secondary")
     return (
       <button className={styles[type]} onClick={onClick}>
-        <img
-          src="../assets/images/icon-add-to-cart.svg"
-          alt="add-to-cart-icon"
-        />
+        <img src="./images/icon-add-to-cart.svg" alt="add-to-cart-icon" />
         {children}
       </button>
     );

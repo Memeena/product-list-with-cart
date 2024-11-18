@@ -26,7 +26,7 @@ export default function MenuItem({ item }) {
 
   return (
     <li className="flex flex-col relative gap-1">
-      <img src={`.${image.mobile}`} alt="img" className="rounded-md" />
+      <img src={`${image.mobile}`} alt="img" className="rounded-md" />
       {!isInCart ? (
         <AddtoCart handleAddCart={handleAddCart} />
       ) : (

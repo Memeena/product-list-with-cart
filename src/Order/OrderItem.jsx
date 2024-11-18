@@ -5,7 +5,7 @@ export default function OrderItem({ item }) {
   return (
     <li className=" grid grid-cols-[max-content,1fr,max-content] justify-between gap-4 items-center text-sm py-4">
       <img
-        src={`.${item.image}`}
+        src={`${item.image}`}
         alt="thumbnail"
         className="w-12 h-12 rounded-md"
       />

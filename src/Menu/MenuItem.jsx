@@ -4,11 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItem, getCurrentQuantityById } from "../Cart/cartSlice";
 import AddtoCart from "../Cart/AddtoCart";
 import UpdateItemQuantity from "../Cart/UpdateItemQuantity";
-export default function MenuItem({ item }) {
+export default function MenuItem({ item, width }) {
   const { image, name, category, id, price } = item;
   // const cart = useSelector(getCart);
   const currentQuantity = useSelector(getCurrentQuantityById(id));
   const dispatch = useDispatch();
+  const img =
+    width < 520 ? image.mobile : width < 720 ? image.tablet : image.desktop;
 
   const isInCart = currentQuantity > 0;
   function handleAddCart() {
@@ -26,7 +28,7 @@ export default function MenuItem({ item }) {
 
   return (
     <li className="flex flex-col relative gap-1">
-      <img src={`${image.mobile}`} alt="img" className="rounded-md" />
+      <img src={img} alt="img" className="rounded-md" />
       {!isInCart ? (
         <AddtoCart handleAddCart={handleAddCart} />
       ) : (

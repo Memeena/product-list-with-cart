@@ -19,7 +19,7 @@ export default function CartItem({ item }) {
       </div>
       <div className="border-stone-300 border-2 rounded-full  w-6 h-6 flex items-center justify-center">
         <Button onClick={() => dispatch(deleteItem(item.dessertId))}>
-          <img src="../assets/images/icon-remove-item.svg" alt="remove-item" />
+          <img src="./images/icon-remove-item.svg" alt="remove-item" />
         </Button>
       </div>
     </li>

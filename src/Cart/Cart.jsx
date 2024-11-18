@@ -31,10 +31,7 @@ export default function Cart() {
         </span>
       </p>
       <div className="text-sm flex bg-rose-50 m-2 px-2 py-3 rounded-lg gap-2">
-        <img
-          src="../assets/images/icon-carbon-neutral.svg"
-          alt="carbon-neutral"
-        />
+        <img src="./images/icon-carbon-neutral.svg" alt="carbon-neutral" />
         <p>
           This is a <span>carbon-neutral</span> delivery
         </p>

@@ -4,7 +4,7 @@ export default function EmptyCart() {
       <p className="text-3xl text-red-500 font-bold ">Your cart (0)</p>
       <div className="flex flex-col items-center">
         <img
-          src="../assets/images/illustration-empty-cart.svg"
+          src="./images/illustration-empty-cart.svg"
           alt="empty-cart"
           className="items-center"
         />

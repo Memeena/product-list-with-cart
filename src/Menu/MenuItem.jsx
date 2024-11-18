@@ -6,10 +6,10 @@ import AddtoCart from "../Cart/AddtoCart";
 import UpdateItemQuantity from "../Cart/UpdateItemQuantity";
 export default function MenuItem({ item }) {
   const { image, name, category, id, price } = item;
-  console.log(image.mobile);
   // const cart = useSelector(getCart);
   const currentQuantity = useSelector(getCurrentQuantityById(id));
   const dispatch = useDispatch();
+
   const isInCart = currentQuantity > 0;
   function handleAddCart() {
     const newItem = {

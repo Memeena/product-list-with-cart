@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 export default function Button({ type, to, children, onClick, className }) {
-  console.log(type);
   const base =
     " bottom-[28%] left-[28%] flex items-center rounded-full font-semibold px-6 py-2 md:bottom-[15%] md:left-[40%] min-[520px]:bottom-[28%] min-[520px]:px-8 min-[520px]:py-3 disabled:cursor-not-allowed transition-all duration-500 focus:outline-none text-[16px]";
   const styles = {

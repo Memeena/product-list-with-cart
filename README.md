@@ -95,7 +95,7 @@ To delete the item from the cart when the quantity is decreased to 0, I used the
 if (item.quantity === 0) cartSlice.caseReducers.deleteItem(state, action);
 ```
 
-Another important thing I learnt from this challenge is how to deploy a React Router project in Github Pages. 1. We need to do the same thing as any vite project. Additional steps are,
+Another important thing I learnt from this challenge is how to deploy a React Router project in Github Pages. We need to do the same thing as any vite project. Additional steps are,
 
 - Change the "BrowserRouter" to "HashRouter"
 - Add a .github/workflow/deploy.yaml file with the content that is already in the [vite deploy site]("https://vite.dev/guide/static-deploy")
